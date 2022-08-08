@@ -1,0 +1,135 @@
+body {
+    background-color: white;
+}
+
+
+/* -----------This is for the entire nav bar to set how it looks, it's height and its display type */
+.user-navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #453130;
+    height: 80px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+
+/* -----------This is for the logo */
+.logo {
+    justify-content: flex-start;
+    margin: .3em;
+    width: 3.5em;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+
+
+
+
+/* ------------This is for the nav links aka: projects, messages, home page icons and their respective name beneath them */
+.nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    text-align: center;
+    color: white;
+    list-style: none;
+    font-size: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links li a:hover {
+    cursor: pointer;
+    color: rgb(43, 187, 113);
+}
+
+
+.nav-text {
+    text-align: center;
+    font-size: .4em;
+    color: white;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+
+/* ----------This is for the search bar in the nav */
+.user-navbar .search-container {
+    justify-content: flex-end;
+    float: right;
+    margin-top: 5px;
+}
+
+.user-navbar input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.user-navbar .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: rgb(44, 169, 73);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.user-navbar .search-container button:hover {
+    background: rgb(27, 152, 42);
+}
+
+/* -------------------------------------------------------------------- */
+
+
+
+
+/* --------This is for the log out button */
+.log-out-button {
+    position: absolute;
+    right: 16px;
+    top: 50px;
+
+
+    padding: .2em;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    width: 70px;
+    background-color: rgb(201, 69, 69);
+}
+
+.log-out-button:hover {
+    background-color: rgb(160, 52, 52);
+    color: white;
+}
+
+/* ------------------------------------------------------------------- */
+
+
+
+
+
+.active {
+    border-bottom: 2px solid cornsilk;
+  }
+  
+  .active a:hover {
+    color: cornsilk;
+  }

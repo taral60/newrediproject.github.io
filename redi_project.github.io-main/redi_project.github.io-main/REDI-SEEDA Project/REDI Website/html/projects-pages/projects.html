@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5869ff8693.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../css/Page_Specific_CSS/projects-section/projects.css">
+    <link rel="stylesheet" href="../../css/General_CSS/main-site-background.css">
+    <link rel="stylesheet" href="../../css/General_CSS/general.css">
+    <link rel="stylesheet" href="../../css/General_CSS/nav.css">
+    <link rel="stylesheet" href="../../css/General_CSS/footer.css">
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/ico">
+    <title>Projects</title>
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+    <!-- ------------------------The nav menu -->
+     
+
+        <nav>
+            <div class="logo">
+                <a href="../../index.html"><img class="logoimage" src="../../images/REDI-logo.png" alt=""></a>
+            </div>
+    
+    
+             <div class="menu">
+                <ul>
+                    <li><a class="active" href="../../index.html">Home</a></li>
+                    <li><a href="../../html/projects-pages/projects.html">Projects</a></li>
+                    <li><a href="../../html/about-pages/about.html">About</a></li>
+                    <li><a href="../../html/eia.html">EIA</a></li>
+                    <li><a href="../../html/registration-pages/registerpage.html">Sign Up</a></li>
+                    <li><a href="../../html/log-in.html">Sign In</a></li>
+                    
+                </ul>
+                <label id="icon">
+                    <i class="fas fa-bars">
+    
+                    </i>
+                </label>
+            </div>
+    
+          
+
+
+
+
+
+
+
+
+
+
+    </nav>
+    <!-- ------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- Side note: To access the content for both the map and the project list, please go to the -->
+    <!-- project-page-map.js and project-list.js which can both be found in the js folder -->
+    <div class="main-content-wrapper">
+
+        <h1 style="text-align: center;">Map of all projects (Work in progress)</h1>
+
+
+        <!-- This button will need to be configured and edited to make it that depending  -->
+        <!-- on whether or not you're signed in to either display it or hide it -->
+        <a href="addproject.html"> <button class="add-prj-butn">Add project</button> </a>
+
+
+        <div id="map"></div>
+
+
+        <p class="list-name">Projects In List Form</p>
+
+        
+
+
+        <!-- This is the section that wull contain all of the links on the page below the map -->
+        <!-- You don't have to do anything to this section in order to add or remove content from the page -->
+        <!-- Please refer to the projects-list.js to make changes to the content -->
+        <section class="list-of-projects" id="list-of-projects">
+
+        </section>
+
+
+        
+    
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <p class="footer-text"> REDI a division of SEEDA Suite 2000, 125 9 Avenue SE, Calgary, AB, T2G 0P6 Phone: +1
+            (403) 966 9848. </p>
+        <p class="footer-text">© 2018 SEEDA Inc. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="../../js/hamburger-menu.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?&callback=initMap"></script>
+    <script src="../../js/project-pages-section/project-page-map.js"></script>
+    <script src="../../js/project-pages-section/projects-list.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,219 @@
+/* -----------------main content------------------------------------ */
+
+.about-content {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 600px 100px 600px;
+    grid-template-rows: 100px 200px 200px 200px;
+}
+
+
+
+
+/* -----------This is for the text at the very top of the main content section */
+.intro-text {
+    grid-column: 2 / 4;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+
+
+/* -----------This is for the first blurb on the page */
+.seeda-title {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: .3em;
+}
+
+
+
+.seeda-blurb {
+    align-self: center;
+    margin: 0em 1em 0em 1em;
+    grid-column: 1 / 2;
+    grid-row: 2;
+    font-size: 1.3em;
+}
+
+/* ------------------------------------------------------ */
+
+
+
+
+/* -----------This is for the second blurb on the page */
+.info-blurb {
+    align-self: center;
+    margin: 0em 1em 0em 1em;
+    grid-column: 3 / 4;
+    grid-row: 3;
+    font-size: 1.3em;
+}
+
+.info-title {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: .3em;
+}
+/* ------------------------------------------------------ */
+
+
+
+
+
+/* -----------This is for the third blurb on the page */
+.team-title {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: .3em;
+
+}
+
+
+.team-blurb {
+    align-self: center;
+    margin: 0em 1em 0em 1em;
+    grid-column: 1 / 2;
+    grid-row: 4;
+    font-size: 1.3em;
+}
+/* ------------------------------------------------------ */
+
+
+
+
+
+/* -----------This is for the team card section on the page */
+
+/* This is here because the cards are wrapped in an anchor tag */
+a {
+    text-decoration: none;
+}
+
+.team-card-title {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+
+.team-card-section {
+
+    grid-column: 1 / 4;
+    grid-row: 5;
+
+}
+
+
+
+.team-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 3em;
+}
+
+
+.card {
+    width: 210px;
+    height: 300px;
+    background-color: rgba(89, 199, 89, 0.829);
+    box-shadow: 6px 6px 12px -5px grey;
+    margin: 4px;
+    transform: scale(1);
+    perspective: 600px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+
+
+    font-size: .7em;
+    font-weight: 200;
+    letter-spacing: normal;
+}
+
+
+.card:hover {
+    background-color: rgb(69, 189, 69);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+}
+
+img {
+    width: 100%;
+    margin-bottom: .2em;
+}
+
+.name-link {
+    color: black;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.name-link:hover {
+    cursor: pointer;
+}
+/* -------------------------------------------------------------------------------------------- */
+
+
+
+
+/* -------------Media queries------------------------------------------------------------------ */
+
+@media screen and (max-width: 1267px) {
+
+
+    .about-content {
+        grid-template-columns: 600px;
+    }
+    
+    
+
+
+
+
+
+   .intro-text, .info-blurb {
+        grid-column: 1 / 2;
+    }
+
+
+}
+
+@media screen and (max-width: 610px) {
+
+    .about-content {
+        grid-template-columns: 400px;
+        font-size: .7em;
+    }
+}
+
+
+@media screen and (max-width: 610px)  {
+
+    .about-content {
+        grid-template-columns: 300px;
+        font-size: .7em;
+    }
+
+
+    .card {
+
+        width: 190px;
+        height: 275px;
+
+    }
+
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------- */

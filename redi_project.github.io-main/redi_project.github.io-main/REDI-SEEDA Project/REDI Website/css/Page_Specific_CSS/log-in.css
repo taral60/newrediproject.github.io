@@ -1,0 +1,166 @@
+/* -------------This is all for the form------------ */
+/* --------------Main content------------------------- */
+
+.backgroundWrapper {
+    height:100%;
+  }
+  
+  .text-fields {
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-evenly;
+    height: 34em;
+    width: 45em;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: rgb(240, 231, 231);
+    box-shadow: 6px 6px 12px -5px grey;
+  }
+  
+  .bgd-img{
+      background-image: url(../../images/russ-martin-Rec1f6XewdY-unsplash.jpg);
+    background-repeat:  no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 34em;
+    width: 50%;
+  }
+  
+  .loginform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:50%;
+  }
+  
+  
+  input {
+    transition: .3s ease-in-out;
+    text-align: center;
+    border: none;
+    width: 200px;
+    margin: .4em;
+    padding: .4em;
+    background-color: rgb(127, 196, 59);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  
+  
+  input:focus {
+    outline: none;
+    border-radius: 10px;
+    background-color: rgb(35, 174, 20);
+  }
+  
+  
+  
+  
+  
+  
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+  }
+
+  
+  .submit-button {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .submit {
+    margin-top: 1em;
+    border: none;
+    background-color: rgb(88, 179, 93);
+    border-radius: 20px;
+    padding: .4em;
+    width: 100px;
+    box-shadow: 1px 1px 2px #000000;
+  }
+  
+  .submit:hover {
+    cursor: pointer;
+    background-color: rgb(60, 177, 45);
+  }
+  
+  .submit:focus {
+    background-color: rgb(24, 148, 20);
+  }
+  
+  
+  
+  
+  
+  /* --------------Media queries for the nav bar----------------------- */
+  @media screen and (max-width: 850px) {
+  
+   
+  
+  /* -----------This is to remove the image from the form to keep the mobile size working */
+    .text-fields {
+      justify-content: center;
+      margin: 2em auto;
+      height: 34em;
+      width: 25em;
+     
+    }
+  
+    .regform{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+  
+  
+  
+    .bgd-img {
+      background-image: none;
+      height: 0;
+      width: 0;
+    }
+  
+  }
+  
+  
+  
+  @media screen and (max-width: 450px) {
+  
+  
+   .text-fields {
+    justify-content: center;
+    width: 100vw;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 6px 6px 12px -5px rgba(128, 128, 128, 0);
+   }
+  
+  
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* -------------------------------------------------------------------------------------------- */
+  
+  
+  
+  

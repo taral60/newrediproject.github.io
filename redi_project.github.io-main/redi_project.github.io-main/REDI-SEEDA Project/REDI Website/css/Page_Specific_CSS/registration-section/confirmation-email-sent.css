@@ -1,0 +1,12 @@
+.content p {
+    margin: 2em;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 400px) {
+    .content p {
+        font-size: 1.1em;
+    }
+}

@@ -1,0 +1,115 @@
+/* -------------------Main Content---------------------------- */
+
+
+.add-prj-butn {
+    background-color: white; 
+    border: solid;
+    color: rgb(7, 7, 7);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+
+.add-prj-butn:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+#map {
+    height: 560px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background: #fff;
+    padding: 30px;
+    border-style: solid;
+    border-width: 15px;
+    border-top-color: lighten(#000, 20%);
+    border-right-color: lighten(#000, 0%);
+    border-bottom-color: lighten(#000, 20%);
+    border-left-color: lighten(#000, 0%);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
+}
+
+
+
+
+/* This is for the title above the list of projects */
+
+.list-name {
+    font-size: 1.3em;
+    margin-top: 1.5em;
+    text-align: center;
+    border-top: 5px rgb(92, 65, 65) solid;
+}
+
+/* ------------------------------------------------ */
+
+
+
+
+.list-of-projects {
+    margin: 2em;
+}
+
+.project-list {
+    display: flex;
+}
+
+
+.project-list li {
+    list-style: none;
+    margin: 1em;
+}
+
+
+.project-list li a {
+    color: rgb(36, 31, 31);
+}
+
+
+
+
+@media screen and (max-width: 1100px) {
+    #map {
+        margin-left: auto;
+        margin-right: auto;
+        height: 400px;
+        width: 100%;
+        border: none;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+
+    #map {
+        margin-left: auto;
+        margin-right: auto;
+        height: 400px;
+        width: 100%;
+        border: none;
+    }
+
+    .list-of-projects {
+        margin: 1em;
+    }
+
+    .project-list li {
+        margin: .5em;
+        font-size: .8em;
+    }
+
+
+}
+
+/* ------------------------------------------------------------------- */

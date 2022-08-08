@@ -1,0 +1,153 @@
+/* General styling: Meaning that this is just for parts of the page that repeat so only one  */
+/* set of styling is necessary */
+
+
+/* This section is the titles for the cards */
+.card-title {
+    text-align: center;
+    font-size: 1.3em;
+    padding: 1em;
+
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* This section is for all 3 buttons on the page since styling them one at a time is just unecessary code */
+.card-button {
+    font-size: 1em;
+    font-family: 'Rubik', sans-serif;
+    background-color: rgb(236, 79, 79);
+    color: white;
+    border: rgb(0, 0, 0);
+    width: 160px;
+    padding: 1.2em;
+    justify-content: center;
+    transition: .3s ease-in-out;
+}
+
+.content a {
+    margin: auto;
+}
+
+
+.card-button:hover {
+    cursor: pointer;
+    background-color: rgb(221, 54, 54);
+    border-radius: 40px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.022), 0 10px 10px rgba(0, 0, 0, 0.049);
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* After this point the code below is to make the cards both look the same and to place them where they are */
+
+
+
+
+
+
+
+
+
+
+/* This section is for the verification button section */
+.verify-button-section {
+    display: flex;
+    flex-direction: column;
+    margin: 2em auto 0em auto;
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.131), 0 10px 10px rgba(0, 0, 0, 0.097);
+    height: 240px;
+    width: 600px;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+
+
+/* This is the section for the re-send verification email section */
+
+.resend-email-section {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.131), 0 10px 10px rgba(0, 0, 0, 0.097);
+    height: 240px;
+    width: 500px;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------- */
+
+
+
+/* This is the section for the user page section */
+
+.user-page-section {
+    position: absolute;
+    left: 66.3vw;
+    top: 22.6em;
+    bottom: 7.7em;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.131), 0 10px 10px rgba(0, 0, 0, 0.097);
+    height: 240px;
+    width: 500px;
+}
+
+
+
+
+/* -------------------------------------------------------------------------------------------- */
+
+
+/* This section is for the media queries */
+
+@media screen and (max-width: 1500px) {
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 4em;
+    }
+
+
+    .resend-email-section {
+        margin: 2em auto 0em auto;
+    }
+
+
+    .user-page-section {
+        margin: 1em auto 0em auto;
+        position: relative;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+
+}
+
+
+@media screen and (max-width: 630px) {
+
+    .verify-button-section, .resend-email-section, .user-page-section {
+        font-size: .8em;
+        height: 160px;
+        width: 90vw;
+        margin-top: 1.2em;
+    }
+
+
+
+}

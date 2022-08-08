@@ -1,0 +1,76 @@
+/* This area is for the individual notes page which will include the username, info regarding the company and their project, the user that created note and the full note itself */
+
+
+
+.center-block {
+    margin: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: wheat;
+
+    height: 600px;
+    width: 1200px;
+}
+
+
+
+
+.profile-area {
+    text-align: center;
+    width: 13%;
+    padding: .8em;
+}
+
+
+.notes-titles {
+    top: 125px;
+    left: 600px;
+    right: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    text-align: center;
+}
+
+
+
+.individual-note {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    right: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+    background-color: aliceblue;
+    width: 900px;
+    height: 480px;
+}
+
+
+
+.note-text {
+    text-align: start;
+    margin: 1.5em;
+}
+
+
+
+
+
+
+
+.proj-work-date {
+    display: flex;
+    position: absolute;
+    top: 687px;
+    bottom: 110px;
+    left: 1075px;
+}
+
+
+.project-work-start, .project-work-end {
+    margin-left: 1em;
+}

@@ -1,0 +1,234 @@
+
+/* ---------------This is for the user profile card */
+
+.user-profile-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 100px 120px;
+
+
+    /* This centers the image using a margin */
+    margin: auto;
+
+    margin: 1.2em;
+
+
+    align-self: center;
+    background-color: rgb(245, 240, 240);
+    box-shadow: 3px 5px 6px rgb(146, 144, 144);
+    width: 345px;
+    height: 500px;
+}
+
+
+
+
+.banner {
+    grid-column: 1 / 4;
+    grid-row: 1 / 1;
+    object-fit: cover;
+    height: 10rem;
+    width: 100%;
+
+}
+
+.profile {
+    height: 10rem;
+    width: 10rem;
+    border: .5rem solid rgb(255, 255, 255);
+    border-radius: 10%;
+    grid-column-start: 2;
+    grid-row: 1 / 2;
+    align-self: end;
+}
+
+
+
+.profile-description-text {
+
+    margin: 1em;
+
+}
+
+
+.profile-description-text p {
+    margin: 1em;
+}
+
+
+
+
+
+
+
+
+/* Places the text where I need it to be on my grid */
+.text {
+
+    padding: .6rem;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+
+
+.view-profile-text {
+    color: grey;
+
+
+    align-self: end;
+    justify-self: end;
+    margin-right: .6em;
+    margin-bottom: .2em;
+    font-size: .9em;
+    grid-column: -3 / -1;
+    grid-row: 4 / 5;
+}
+
+
+.view-profile-text a, .profile-description-text a {
+    color: grey;
+    text-decoration: none;
+}
+
+
+
+.view-profile-text a:hover, .profile-description-text a:hover {
+    color: green;
+}
+
+
+/* ----------------------------------------------------------------------- */
+
+
+
+
+/*  This is the section for the add post section that is to the right of the user profile card */
+
+
+.post-button {
+    padding: 10px;
+    width: 345px;
+    margin: 1em;
+    font-size: 17px;
+    border: none;
+    background-color: rgb(245, 240, 240);
+    box-shadow: 3px 5px 6px rgb(146, 144, 144);
+}
+
+
+.post-button:hover {
+    cursor: pointer;
+    background-color: rgba(32, 156, 57, 0.281);
+}
+
+
+
+.butn {
+    position: absolute; 
+    top: 10em;
+    left: 20em;
+    font-size: 2em;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* This is the section for the message board on the left hand side of the screen below the user profile card */
+
+.messages {
+    margin: 1em;
+    background-color: rgb(245, 240, 240);
+    box-shadow: 3px 5px 6px rgb(146, 144, 144);
+    width: 450px;
+    height: fit-content;
+}
+
+.message-title {
+    padding: 1em;
+   
+}
+
+
+
+.message-rectangle {
+    display: grid;
+    grid-template-columns: 90px 90px 90px 90px auto;
+    grid-template-rows: 20px 20px 20px auto;
+
+
+    border-top: black 2px solid;
+    border-bottom: black 1px solid;
+    height: 80px;
+    width: 100%;
+}
+
+
+.user-name {
+    grid-column: 2 / 3;
+}
+
+
+.user-image {
+    font-size: .9em;
+    grid-row: 2 / 4;
+    align-self: center;
+    margin-left: .3em;
+}
+
+
+.message-itself {
+    font-size: .7em;
+    grid-column: 2 / 6;
+    grid-row: 2 / 4;
+    align-self: center;
+}
+
+
+
+.message-date {
+    text-align: center;
+    align-self: end;
+    margin-bottom: .1em;
+    grid-column: 5 / 6;
+    grid-row: 4 / 5;
+    font-size: .7em;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+
+@media screen and (max-width: 800px) {
+
+    .nav-text {
+        display: none;
+    }
+
+
+
+    .user-navbar input[type=text] {
+        width: 20vw;
+    }
+
+
+
+}

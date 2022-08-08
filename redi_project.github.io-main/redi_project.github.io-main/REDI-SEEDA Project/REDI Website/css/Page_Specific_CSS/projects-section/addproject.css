@@ -1,0 +1,122 @@
+
+/* -------------------Main Content---------------------------- */
+
+
+
+/* Basically the styling for this form is the same as the register page with changes in of course the class names and certain 
+differnt styling parameters because copying and pasting doesn't fix every problem */
+
+
+
+.form-wrapper {
+  display: block;
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+
+.add-project-form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+input[type="file"] {
+  display: none;
+} 
+
+
+.custom-file-upload {
+  border: none;
+  width: 220px;
+  margin-top: .5em;
+  margin-bottom: 2em;
+  padding: .4em;
+  background-color: rgb(127, 194, 61);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+}
+
+
+
+input,
+.enter-description {
+  transition: .3s ease-in-out;
+  text-align: start;
+  border: none;
+  width: 220px;
+  margin-top: .5em;
+  margin-bottom: 2em;
+  padding: .4em;
+  background-color: rgb(127, 196, 59);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-family: 'Rubik', sans-serif;
+}
+
+
+
+
+.enter-description {
+  width: 400px;
+}
+
+
+
+
+input:focus,
+.enter-description:focus {
+  outline: none;
+  border-radius: 10px;
+  background-color: rgb(39, 146, 27);
+}
+
+
+
+
+.enter-description {
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  text-align: start;
+  width: 500px;
+
+}
+
+
+
+
+
+
+
+.submit {
+  border: none;
+  background-color: rgb(88, 179, 93);
+  border-radius: 20px;
+  padding: .4em;
+  width: 100px;
+  box-shadow: 1px 1px 2px #000000;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: rgb(60, 177, 45);
+}
+
+.submit:focus {
+  background-color: rgb(24, 148, 20);
+}
+
+
+/* ------------------------------------------------------------------- */
+
+
+@media screen and (max-width: 400px) {
+  .enter-description {
+    width: 300px;
+  }
+
+
+}
